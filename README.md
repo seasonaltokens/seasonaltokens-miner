@@ -7,7 +7,7 @@ This is a python implementation of a miner for the Seasonal Tokens. At present, 
     $ pip3 install pysha3 web3
     $ python3 seasonal_miner_rinkeby.py
 
-    usage: python seasonal_miner.py <provider_url> <private key> <season> [reward batch size]
+    usage: python seasonal_miner_rinkeby.py <provider_url> <private key> <season> [reward batch size]
 
 ## Mining
 

@@ -128,7 +128,7 @@ class SeasonalTokenMiner(object):
 
 if __name__ == "__main__":
     if len(sys.argv) != 4 and len(sys.argv) != 5:
-        print("usage: python seasonal_miner.py <provider_url> <private key> <season> [reward batch size]")
+        print("usage: python %s <provider_url> <private key> <season> [reward batch size]" % sys.argv[0])
         sys.exit()
     provider_url, private_key, season = sys.argv[1:4]
     batch_size = int(sys.argv[4]) if len(sys.argv) == 5 else 1
