@@ -33,9 +33,8 @@ The default value is 1.
 
 To see and send the tokens mined, you need to add the tokens to your account in MetaMask. In the MetaMask dialog, select your account and click the Add Token button at the bottom of your list of Assets. Then paste the contract address of the token you want to add:
 
-    spring: 0xc46C470A632f4A20396DCF15fE760D536BB0eE62
-    summer: 0x30db052576fb86E505F7257a42Fb25493503dFcc
-    autumn: 0x448d91A2447cB8153C8aaB389Bea51c46B81f8df
-    winter: 0x51df120A37a2401e37c7FEB33Fc47b09B6617579
-
+    spring: 0x1998b7B2416C3E990693ca54dCE2Dda2aA38EcFa
+    summer: 0xEa3EE51240Fc74a71065fE4281c2A0Bb9f384DAf
+    autumn: 0x150902dc4644F5EEc3Fb5c857DDDD72D2aC40160
+    winter: 0x5D533282264Ff99A4741DE55eA41C2f1c6446A9A
 
