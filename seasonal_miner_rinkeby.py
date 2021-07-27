@@ -10,7 +10,7 @@ from time import time, sleep
 
 seasons = ["spring", "summer", "autumn", "winter"]
 
-contract_addresses = {'spring': '0x1998b7B2416C3E990693ca54dCE2Dda2aA38EcFa'
+contract_addresses = {'spring': '0x1998b7B2416C3E990693ca54dCE2Dda2aA38EcFa',
                       'summer': '0xEa3EE51240Fc74a71065fE4281c2A0Bb9f384DAf',
                       'autumn': '0x150902dc4644F5EEc3Fb5c857DDDD72D2aC40160',
                       'winter': '0x5D533282264Ff99A4741DE55eA41C2f1c6446A9A'}
@@ -127,12 +127,15 @@ class SeasonalTokenMiner(object):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4 and len(sys.argv) != 5:
-        print("usage: python %s <provider_url> <private key> <season> [reward batch size]" % sys.argv[0])
+    if len(sys.argv) != 3 and len(sys.argv) != 4:
+        print("usage: python3 %s <provider_url> <season> [reward batch size]" % sys.argv[0])
         sys.exit()
-    provider_url, private_key, season = sys.argv[1:4]
-    batch_size = int(sys.argv[4]) if len(sys.argv) == 5 else 1
-    
+    provider_url, season = sys.argv[1:3]
+    batch_size = int(sys.argv[3]) if len(sys.argv) == 4 else 1
+
+    sys.stdout.write("Enter the private key: ")
+    sys.stdout.flush()
+    private_key = sys.stdin.readline().strip()
 
     miner = SeasonalTokenMiner(provider_url, private_key, season, batch_size)
 

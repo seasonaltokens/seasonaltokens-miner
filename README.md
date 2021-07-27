@@ -7,7 +7,7 @@ This is a python implementation of a miner for the Seasonal Tokens. At present, 
     $ pip3 install pysha3 web3
     $ python3 seasonal_miner_rinkeby.py
 
-    usage: python seasonal_miner_rinkeby.py <provider_url> <private key> <season> [reward batch size]
+    usage: python3 seasonal_miner_rinkeby.py <provider_url> <season> [reward batch size]
 
 ## Mining
 
@@ -21,13 +21,15 @@ Then export the private key from that account by clicking the three vertical dot
 
 Then you can mine, for example, Spring Tokens, by doing:
 
-    $ python3 seasonal_miner_rinkeby.py <provider_url> <private key> spring
+    $ python3 seasonal_miner_rinkeby.py <provider_url> spring
 
 You can optionally add a final argument to specify the minimum number of rewards for which you are willing to pay the ETH costs of submitting the transaction that claims the tokens:
 
-    $ python3 seasonal_miner_rinkeby.py <provider_url> <private key> spring 5
+    $ python3 seasonal_miner_rinkeby.py <provider_url> spring 5
 
 The default value is 1.
+
+The mining software will then prompt you for the private key and begin mining. The user will be prompted for confirmation if there are more rewards currently available than the specified minimum.
 
 ## Adding the Tokens to MetaMask
 
