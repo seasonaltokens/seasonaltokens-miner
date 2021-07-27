@@ -5,6 +5,8 @@ This is a python implementation of a miner for the Seasonal Tokens. At present, 
 ## Installation
 
     $ pip3 install pysha3 web3
+    $ git clone https://github.com/seasonaltokens/seasonaltokens-miner.git
+    $ cd seasonaltokens-miner
     $ python3 seasonal_miner_rinkeby.py
 
     usage: python3 seasonal_miner_rinkeby.py <provider_url> <season> [reward batch size]
